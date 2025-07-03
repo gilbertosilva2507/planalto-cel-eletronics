@@ -1,0 +1,236 @@
+ <!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>produtos</title>
+  <style>
+  h1 {
+  font-size: 2em;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    main{
+      background-color:turquoise;
+    }
+       header {
+      background-color:slategrey;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .welcome-text {
+      text-align: center;
+      color: #222;
+      margin: 20px;
+    }
+    .galeria {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+      align-items: flex-start;
+    }
+
+    .galeria figure {
+      margin: 0;
+      text-align: center;
+      width: 300px;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .galeria img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+
+    
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color:slategrey;
+      color: white;
+    }
+
+    .grade-produtos {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+     .produto {
+      width: 22%; 
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 10px;
+      text-align: center;
+    }
+
+    .produto img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .produto h3 {
+      font-size: 1.1em;
+      margin: 10px 0 5px;
+    }
+
+    .produto p {
+      margin: 5px 0;
+    }
+
+    .produto button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #003366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .produto button:hover {
+      background-color: #0055aa;
+    }
+    h1,h2,h3{
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+  .produto {
+    width: 45%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .produto {
+    width: 90%; 
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Planalto Cel Eletronics</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Catálogo de Smartphones e Acessórios</h2>
+    <section class="grade-produtos">
+      <!--produto1-->
+      <div class="produto">
+        <a href="s25-ultra.html">
+        <img src="imagens/galaxy-s25.jpeg" alt="imagem galaxy s25 ultra"></a>
+        <h3>Smartphone Galaxy S25 Ultra</h3>
+        <p>Desempenho e câmera de última geração.</p>
+        <p><strong>R$ 6.000,00</strong></p>
+        <button>Comprar</button>
+      </div>
+      <!--produto2-->
+      <div class="produto">
+        <a href="s24-ai.html" target="_blank"><img src="imagens/s24.webp" alt="imagem s24 galaxy Ai"></a>
+      <h3>Smartphone S24 Galaxy AI</h3>
+      <p>Transforme seus áudios em textos inteligentes</p>
+      <p><strong>R$3.410,00</strong></p>
+       <button>Comprar</button>
+      </div>
+    
+         <!-- Produto 3 -->
+      <div class="produto">
+        <a href="galaxy-buds-fe.html" target="_blank"><img src="imagens/galaxy-buds-fe.jpeg" alt="Fone Bluetooth"></a>
+        <h3>Fone Bluetooth</h3>
+        <p>Áudio limpo e sem fios.</p>
+        <p><strong>R$ 287,00</strong></p>
+        <button>Comprar</button>
+      </div>
+
+      <!-- Produto 4 -->
+      <div class="produto">
+        <a href="carregador-turbo-samsung.html"><img src="imagens/carregador-turbo-samsung.jpeg" alt="Carregador Turbo"></a>
+        <h3>Carregador Turbo</h3>
+        <p>Carregamento rápido e seguro.</p>
+        <p><strong>R$ 280,90</strong></p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <a href="ps5-slim.html"><img src="imagens/ps5-slim.jpeg" alt="imagem do console ps5 slim 1TB"></a>
+        <h3>Console PS5 Slim</h3>
+        <p>A qualidade gráfica excepcional e alto desempenho.</p>
+        <p><strong>R$ 3.800,90</strong></p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <a href="ssd-kingston.html"><img src="imagens/ssd-kingston.webp" alt="imagem do ssd kingstom 1TB"></a>
+        <h3>SSD Kingston</h3>
+        <p>SSD Kingston 1TB M.2 2280 NV3 PCIe 4.0 NVMe 
+Desempenho Gen4 NVMe PCIe: </p>
+        <p><strong>R$ 409,99</strong></p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <a href="smartband-fit.html"><img src="imagens/smartband-fit.webp" alt="imagem do relogio smart samrtband fit da samsung"></a>
+        <h3>Smartband Fit Samsung</h3>
+        <p>Smartwatch Samsung Galaxy Fit3 Display 1.6" Rosé</p>
+        <p><strong>R$ 289,00</strong></p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <a href="robo-aspirador.html"><img src="imagens/robo-aspirador.webp" alt="imagem do robo aspirador smart"></a>
+        <h3>Robo Aspirador</h3>
+        <p>O Robô Aspirador e Passa Pano Smart 700 é a revolução</p>
+        <p><strong>R$ 899,00</strong></p>
+        <button>Comprar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Planalto Cel Eletronics - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
