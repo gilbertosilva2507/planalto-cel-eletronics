@@ -1,0 +1,263 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+       /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    header div a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header div a:hover {
+      text-decoration: underline;
+    }
+
+    .busca {
+      margin-top: 15px;
+    }
+
+    .busca input {
+      padding: 8px;
+      width: 60%;
+      max-width: 300px;
+    }
+
+    .busca button {
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    /* Banner */
+    .banner-cheio img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Galeria */
+    .galeria-horizontal-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    .galeria-horizontal {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      scroll-behavior: smooth;
+      padding: 10px;
+    }
+
+    .galeria-horizontal a {
+      flex: 0 0 auto;
+    }
+
+    .galeria-horizontal img {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .galeria-horizontal img:hover {
+      transform: scale(1.05);
+      border-color: #003366;
+    }
+
+    .seta {
+      font-size: 24px;
+      background: #003366;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 0 10px;
+    }
+
+    .seta:hover {
+      background-color: #0055aa;
+    }
+
+    /* Rodapé */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #003366;
+      color: white;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+   header div {
+  margin-top: 10px;
+}
+
+header div a {
+  display: inline-block;
+  margin: 0 10px;
+} 
+galeria-horizontal::-webkit-scrollbar {
+  height: 10px; /* Altura da barra horizontal */
+}
+
+.galeria-horizontal::-webkit-scrollbar-track {
+  background: #eee; /* Cor do fundo da trilha da barra */
+}
+
+.galeria-horizontal::-webkit-scrollbar-thumb {
+  background-color: #003366; /* Cor da parte que desliza */
+  border-radius: 5px;
+  border: 2px solid #fff; /* Borda para efeito de espaçamento */
+}
+
+.galeria-horizontal::-webkit-scrollbar-thumb:hover {
+  background-color: #0055aa; /* Cor ao passar o mouse */
+}
+/* Altura e largura da barra de rolagem */
+.galeria-horizontal::-webkit-scrollbar {
+  height: 12px;            /* altura da barra horizontal */
+}
+
+/* Fundo da barra (track) */
+.galeria-horizontal::-webkit-scrollbar-track {
+  background: #f0f0f0;     /* cor da "trilha" da barra */
+  border-radius: 6px;
+}
+
+/* Parte que desliza (thumb) */
+.galeria-horizontal::-webkit-scrollbar-thumb {
+  background-color: #003366; /* cor da "pegada" da barra */
+  border-radius: 6px;
+  border: 3px solid #f0f0f0; /* cria um espaço entre thumb e track */
+}
+
+/* Thumb ao passar mouse */
+.galeria-horizontal::-webkit-scrollbar-thumb:hover {
+  background-color: #0055aa;
+}
+
+/* Firefox: cor da barra e trilha */
+.galeria-horizontal {
+  scrollbar-width: thin;
+  scrollbar-color: #003366 #f0f0f0;
+}
+  </style>
+
+   
+</head>
+<body>
+  <!-- ================================
+       CABEÇALHO (IMPORTANTE)
+       Título e formulário de busca
+  ================================== -->
+  <header>
+    <h1>Planalto Cel Eletronics</h1>
+     <div>
+    <a href="index.html">Início</a><a href="produtos.html">Produtos</a><a href="contato.html">Contato</a>
+     </div>
+    <form class="busca" action="#" method="get">
+      <input type="text" name="busca" placeholder="Buscar por código, modelo ou marca...">
+      <button type="submit">🔍</button>
+    </form>
+  </header>
+
+  <!-- ================================
+       CONTEÚDO PRINCIPAL (IMPORTANTE)
+       Texto de boas-vindas e galeria de produtos
+  ================================== -->
+  <main>
+    <div class="banner-cheio">
+      <img src="imagens/banner.png" alt="campanha promoçao Dia dos Pais">
+    </div>
+      <div class="galeria-horizontal-container">
+      <button class="seta esquerda" onclick="scrollGaleria(-1)">&#8678;</button>
+        <div class="galeria-horizontal" id="galeria">
+          <a href="s24-ai.html"><img src="imagens/s24.webp" alt="imagem do smartphone galaxy s24 samsung" width="250" height="250"></a>
+          <a href="galaxy-buds-fe.html"><img src="imagens/galaxy-buds-fe.jpeg" alt="fone de ouvido galaxy buds da samsung" width="250" height="250"></a>
+          <a href="s25-ultra.html"><img src="imagens/galaxy-s25.jpeg" alt="imagem do smartphone galaxy s25 ultra da samsung" width="250" height="250"></a>
+          <a href="ps5-slim.html"><img src="imagens/ps5-slim.jpeg" alt="imagem do console ps5 slim" width="250" height="250"></a>
+          <a href="mouse-gamer.html"><img src="imagens/mouse-gamer.webp" alt="imagem do mouse gamer" width="250" height="250"></a>
+          <a href="placa-de-video-xfx.html"><img src="imagens/placa-de-video-xfx.webp" alt="imagem do produto placa de video xfx" width="250"height="250"></a>
+          <a href="monitor-gamer-lg.html"><img src="imagens/monitor-gamer-lg.webp" alt="imagem do monitor gamer da marca lg" width="250" height="250"></a>
+          <a href="robo-aspirador.html"><img src="imagens/robo-aspirador.webp" alt="imagem do aparelho robo aspirador"></a>
+          <a href="ssd-kingston.html"><img src="imagens/ssd-kingston.webp" alt="imagem doitem ssd da marca kingston"></a>
+        </div>
+        <button class="seta direita" onclick="scrollGaleria(+1)">&#8680;</button>
+        
+  </main>
+
+  <!-- ================================
+       RODAPÉ (IMPORTANTE)
+       Direitos reservados e informações de rodapé
+  ================================== -->
+  <footer>
+    <a href="contato.html">Fale conosco</a>| <a href="privacidade.html">Privacidade</a>|<a href="trabalhe_conosco.html">Trabalhe conosco</a><br>
+    <p>&copy; 2025 Planalto Cel Eletronics - Todos os direitos reservados.</p>
+  </footer>
+  
+  <script>
+   function scrollGaleria(direcao) {
+    const galeria = document.getElementById('galeria');
+    const larguraScroll = 270; // Tamanho de um item + margem
+    const scrollMax = galeria.scrollWidth - galeria.clientWidth;
+
+    if (direcao === 1) {
+      // Se já está no final, volta ao início
+      if (galeria.scrollLeft + larguraScroll >= scrollMax) {
+        galeria.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        galeria.scrollBy({ left: larguraScroll, behavior: 'smooth' });
+      }
+    } else if (direcao === -1) {
+      // Se está no início, vai para o final
+      if (galeria.scrollLeft <= 0) {
+        galeria.scrollTo({ left: scrollMax, behavior: 'smooth' });
+      } else {
+        galeria.scrollBy({ left: -larguraScroll, behavior: 'smooth' });
+      }
+    }
+  }
+</script>
+</body>
+</html>
